@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Sederhana</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #e0e0e0, #ffffff);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styling */
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 15px 20px;
+            text-align: center;
+            border-bottom: 4px solid #ffb400;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        /* Navigation Styling */
+        nav {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        nav button {
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            background: #ffb400;
+            color: #ffffff;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        nav button:hover {
+            background: #35424a;
+        }
+
+        /* Content Section Styling */
+        .content {
+            padding: 20px;
+            display: none;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: center;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .content h2 {
+            color: #35424a;
+            margin-bottom: 15px;
+        }
+
+        .content p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .content img {
+            border-radius: 10px;
+            margin: 10px;
+            width: 100%;
+            max-width: 300px;
+            transition: transform 0.3s;
+        }
+
+        .content img:hover {
+            transform: scale(1.05);
+        }
+
+        .active {
+            display: block;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #a6adb2;
+            color: #ffffff;
+            margin-top: 20px;
+            border-top: 4px solid #ffb400;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        /* Animation for Page Transition */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>chapter 8</h1>
+    <nav>
+        <button onclick="showPage('about')">About Us</button>
+        <button onclick="showPage('foto1')">Foto 1</button>
+        <button onclick="showPage('foto2')">Foto 2</button>
+        <button onclick="showPage('foto3')">Foto 3</button>
+    </nav>
+</header>
+
+<div id="about" class="content active">
+    <h2>chapter 8</h2>
+    <p>Makasi sudah mau berjuang sama-sama sampai saat ini, aku gak tahu apa yang bakal terjadi kalau kita gak bareng saat ini.
+       Aku cuma mau berterima kasih ke kamu. Makasi udah ngasih apapun dan usahain apapun buat aku, makasi udah buat aku ngerti apa itu cinta,
+       makasi juga kamu udah sabar sama sikapku yang jelek banget ini. Aku cuma mau kedepannya kita bisa jadi pasangan yang jauh lebih baik lagi.</p>
+     <h2>about us</h2>
+        <p>kita yang setiap hari ada aja ulahnya,kalo gak bucin ya berantem,udh gitu 
+            berantemnya pukul pukulan lagi emang gak sakit apa tapi kamu tau gak si apa yang aku rasain kalo kita udah selesai berantem,rasanya tuh kayak makin sayang dan gak mau jauh gitu
+             serius deh kayak udah kecintaan gitu,tapi aku mau bilang makasi banget udah mau jadi bagian dari hidup aku walaupun kata kata di atas juga ada makasinya. maafin aku banget yang suka cuekin kamu 
+             maafin aku yang udah buat kamu kesel atau ngerepotin kamu dalam hal apapun tapi aku bersyukur banget bisa dapet kamu di hidup aku, i love u so much, semoga dan semoga harapan harapan yang kita semogakan
+             dalam hal hubungan ini menjadi nyata, hal hal positif untuk hubungan ini contohnya, aku harap kita bakal selalu bareng walaupun itu mustahil, but i love u so much </p>   
+</div>
+
+<div id="foto1" class="content">
+    <h2>how to cute we are</h2>
+    <img src="WhatsApp Image 2024-10-27 at 22.54.33.jpeg" alt="Foto 1">
+    <p>kamu tau hal ini yang aku nanti nantiin dari lama,iya foto sama kamu kayak gini,aku seneng banget,tapi maaf kalo hasilnya buat kamu kecewa</p>
+</div>
+
+<div id="foto2" class="content">
+    <h2>gemes banget 2 orang ini</h2>
+    <img src="WhatsApp Image 2024-10-27 at 22.56.03.jpeg" alt="Foto 2">
+    <p>kita lagi ngaca trus tiba tiba kamu ngomong "foto yuk" itukan sebuah keajaiban yang pernah aku denger sebelumnya</p>
+    <img src="WhatsApp Image 2024-10-27 at 22.57.00.jpeg" alt="Foto 2">
+    <p>tapi kamu sadar gak si kalo kmu itu cantik banget, i love u so much sayang</p>
+</div>
+
+<div id="foto3" class="content">
+    <h2>lagi pacaran</h2>
+    <img src="WhatsApp Image 2024-10-27 at 22.58.47.jpeg" alt="Foto 3">
+    <p>kalo lagi pacaran serius gemes juga ya dua manusia itu,kita maksudnya wkwwk</p>
+</div>
+
+<footer>
+    <p>&copy; 2024 lifty pavita. Semua hak dilindungi.</p>
+</footer>
+
+<script>
+    function showPage(pageId) {
+        const pages = document.querySelectorAll('.content');
+        pages.forEach(page => {
+            page.classList.remove('active');
+        });
+        document.getElementById(pageId).classList.add('active');
+    }
+</script>
+
+</body>
+</html>
+
+
